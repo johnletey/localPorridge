@@ -7,16 +7,18 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
+      exports: "default",
     },
     {
       file: pkg.module,
       format: "es",
+      exports: "default",
     },
   ],
   external: [
+    "fs",
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.devDependencies || {}),
-    "fs",
   ],
   plugins: [
     typescript({

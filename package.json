@@ -1,6 +1,6 @@
 {
-  "name": "localPorridge",
-  "version": "1.0.0",
+  "name": "localporridge",
+  "version": "1.0.0-alpha",
   "description": "A rip-off of localStorage for Node.",
   "author": "John Letey <johnletey@gmail.com>",
   "license": "MIT",
