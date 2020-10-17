@@ -16,6 +16,7 @@ export default {
   external: [
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.devDependencies || {}),
+    "fs",
   ],
   plugins: [
     typescript({

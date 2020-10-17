@@ -9,4 +9,13 @@ describe("E2E Tests", function () {
     assert(localStorage);
     done();
   });
+  it("Test setItem(<NAME>, <VALUE>)", (done) => {
+    localStorage.setItem("test", "1234");
+    done();
+  });
+  it("Test getItem(<NAME>)", (done) => {
+    const value = localStorage.getItem("test");
+    assert(value);
+    done();
+  });
 });
