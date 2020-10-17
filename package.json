@@ -7,7 +7,8 @@
   "scripts": {
     "build": "rollup -c",
     "test": "rollup -c rollup.test.js && mocha 'build/index.test.js' --no-timeout --exit",
-    "fmt": "prettier --write ."
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check ."
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
