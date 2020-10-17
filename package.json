@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
+    "test": "rollup -c rollup.test.js && mocha 'build/index.test.js' --no-timeout --exit",
     "fmt": "prettier --write ."
   },
   "main": "dist/index.js",
@@ -15,6 +16,10 @@
   ],
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0",
     "prettier": "^2.1.2",
     "rollup": "^2.32.0",
     "rollup-plugin-typescript2": "^0.28.0",

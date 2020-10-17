@@ -13,7 +13,10 @@ export default {
       format: "es",
     },
   ],
-  external: [...Object.keys(pkg.dependencies || {})],
+  external: [
+    ...Object.keys(pkg.dependencies || {}),
+    ...Object.keys(pkg.devDependencies || {}),
+  ],
   plugins: [
     typescript({
       typescript: require("typescript"),
