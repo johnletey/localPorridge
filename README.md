@@ -3,7 +3,7 @@
 </p>
 
 [![Build Status](https://img.shields.io/github/workflow/status/johnletey/localPorridge/Test?style=flat&colorA=000000&colorB=000000)](https://github.com/johnletey/localPorridge/actions?query=workflow%3ATest)
-[![Version](https://img.shields.io/npm/v/local-porridge?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/local-porridge)
+[![Version](https://img.shields.io/npm/v/localporridge?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/localporridge)
 
 ## Usage
 
