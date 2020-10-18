@@ -8,7 +8,9 @@ import { Config } from 'node-json-db/dist/lib/JsonDBConfig'
 import LocalPorridge from "../src";
 
 var suite = new Benchmark.Suite;
- 
+
+console.clear();
+
 // add suite for `node-json-db`
 suite.add('node-json-db', function() {
     var db = new JsonDB(new Config("benchmark_db", true, false, '/'));
