@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@divy-work/fastfs@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@divy-work/fastfs/-/fastfs-0.1.0.tgz#059de147a62427291580846b614789ca20210c7a"
+  integrity sha512-SLS1dFe6GcUabSpLbO+bMJun/gLSmMASIAgFGx2R0TKRKZp70JsQIjQ2JQ5CmI4NGfrXP2L//9cYf6z5P9uwUw==
+  dependencies:
+    eventemitter3 "^4.0.7"
+
 "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
@@ -256,6 +263,11 @@ estree-walker@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-1.0.1.tgz#31bc5d612c96b704106b477e6dd5d8aa138cb700"
   integrity sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
+
+eventemitter3@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 fill-range@^7.0.1:
   version "7.0.1"
