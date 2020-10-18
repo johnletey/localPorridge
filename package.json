@@ -8,7 +8,8 @@
     "build": "rollup -c",
     "test": "rollup -c rollup.test.js && mocha 'build/index.test.js' --no-timeout --exit",
     "fmt": "prettier --write .",
-    "fmt:check": "prettier --check ."
+    "fmt:check": "prettier --check .",
+    "bench": "rollup -c rollup.bench.js && node build/index.bench.js"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -17,11 +18,14 @@
   ],
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@types/benchmark": "^1.0.33",
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.0.3",
     "@types/node": "^14.11.10",
+    "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "mocha": "^8.2.0",
+    "node-json-db": "^1.1.0",
     "prettier": "^2.1.2",
     "rollup": "^2.32.0",
     "rollup-plugin-typescript2": "^0.28.0",
