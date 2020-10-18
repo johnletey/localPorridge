@@ -1,12 +1,13 @@
 import * as fs from "fs";
+import FastFs from "@divy-work/fastfs";
 
 export default class localPorridge {
   private location!: string;
   public length: number;
-
+  private fs: ReturnType<typeof FastFs>;
   constructor(location: string) {
     this.location = location;
-
+    this.fs = FastFs(location);
     try {
       const storage = this.getStorage();
       this.length = Object.keys(storage).length;
@@ -43,7 +44,7 @@ export default class localPorridge {
     }
     storage[name] = value;
 
-    fs.writeFileSync(this.location, JSON.stringify(storage));
+    this.fs.write(JSON.stringify(storage));
   }
 
   removeItem(name: string): void {
