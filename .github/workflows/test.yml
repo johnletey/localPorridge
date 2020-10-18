@@ -36,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: yarn test
+
+      - name: Run benchmarks
+        run : yarn bench
